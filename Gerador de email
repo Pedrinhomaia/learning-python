@@ -1,0 +1,19 @@
+import random
+
+def generate_random_email():
+  domains = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"]
+  letters = "abcdefghijklmnopqrstuvwxyz"
+
+  # Gerar um nome de usuario aleatorio
+  username = ""
+  for i in range(8):
+    username += random.choice(letters)
+
+  # SElecionar um dominio aleatorio
+  domain = random.choice(domains)
+
+  # Retornar o email gerado
+  return f"{username}@{domain}"
+
+# Testar Função
+print(generate_random_email())
