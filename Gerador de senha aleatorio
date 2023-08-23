@@ -1,0 +1,11 @@
+import random
+tama = int(input('qual o tamanho da senha que deseja? '))
+def senhaaleatoria():
+    char = 'abcdefghijklmnopqrstuvwxyz123456789@#$!%¨&*'
+    passw = ''
+    for i in range(tama):
+        passw += random.choice(char)
+
+    return passw
+
+print(senhaaleatoria())
